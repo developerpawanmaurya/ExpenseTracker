@@ -30,9 +30,9 @@ jobs:
       - name: Build
         env:
           # Repo subpath, e.g. /expense-tracker-react/
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
-          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_BASE_PATH: /https://developerpawanmaurya.github.io/ExpenseTracker/
+          VITE_SUPABASE_URL: https://xacxfidueftdhqzugcqb.supabase.co
+          VITE_SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhhY3hmaWR1ZWZ0ZGhxenVnY3FiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcyMTAwNTEsImV4cCI6MjA5Mjc4NjA1MX0.75MDM4Jc-W1plQUxE09RO6mCQsyCgsf4KRdOt9Jt6Ew
         run: npm run build
 
       # Make GitHub Pages serve refreshes correctly for an SPA.
